@@ -2,7 +2,7 @@
 using namespace std;
 int count(int n)
 {
-    //hello bas git k liye hai ye
+    
     
     int x=0;
     while(n!=0)
