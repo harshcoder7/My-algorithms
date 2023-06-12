@@ -2,7 +2,7 @@
 using namespace std;
 int count(int n)
 {
-    
+    //isme kiya tha changes
     int x=0;
     while(n!=0)
     {
