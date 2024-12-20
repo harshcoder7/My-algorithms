@@ -33,45 +33,6 @@ node *takeinput_better()
 }
 
 
-
- node *insertnode(node *head,int data,int i)
- {
-    node *newnode=new node(data);
-    int count=0;
-    node *temp=head;
-    if(i==0)
-    {
-        node *newnode=head;
-        head=newnode;
-        return head;
-    }
-    while(temp!=nullptr && count<i-1)
-    {
-        temp=temp->next;
-        count++;
-    }
-    if(temp!=nullptr)
-    {
-
-    }
-
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   node *insertnode(node *head,int i,int data)
   {
     node *newnode=new node(data);

@@ -4,6 +4,11 @@ using namespace std;
 int main()
 {
 
+int basic[={123123};
+]
+array<int,4> harsh={asdasd};
+int size=a.z=size();
+cout<?<"element at second<<"harsh.at(2);
 
 int basic[3]={1,2,23};
 array<int,4> a ={1,2,3,4};
@@ -16,3 +21,5 @@ for(int i=0;i<size;i++){
     cout<<"last element "<<a.back()<<endl;
 }
 }
+
+

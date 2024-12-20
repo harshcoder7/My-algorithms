@@ -1,6 +1,5 @@
-//here instead of using while loop jiske wajah sai hamara time complexity
-//n-1 horha tha well use tail to remove this
-
+// here instead of using while loop jiske wajah sai hamara time complexity
+// n-1 horha tha well use tail to remove this
 
 #include <iostream>
 using namespace std;
@@ -12,22 +11,21 @@ node *takeinput_better()
     int data;
     cin >> data;
     node *head = nullptr;
-    node *tail=nullptr;
-    while (data != -1)  //-1 is terminating condition
+    node *tail = nullptr;
+    while (data != -1) //-1 is terminating condition
     {
         node *newnode = new node(data);
         if (head == nullptr)
         {
-            
             head = newnode;
-            tail=newnode;
-             // edhar apna head ka value null sai update hoke 100 hojayega
+            tail = newnode;
+            // edhar apna head ka value null sai update hoke 100 hojayega
         }
         else
         {
-          tail->next=newnode;
-          tail=tail->next; //update krrhe hai
-          //or tail=newnode;
+            tail->next = newnode;
+            tail = tail->next; // update krrhe hai
+            // or tail=newnode;
         }
 
         cin >> data;
@@ -47,6 +45,6 @@ void print(node *head)
 }
 int main()
 {
-     node *head = takeinput(); // here we are returning value of head soo fucntion call mai bhi head ka pointer banake store karenge takeinput ko
+    node *head = takeinput_better(); // here we are returning value of head soo fucntion call mai bhi head ka pointer banake store karenge takeinput ko
     print(head);
 }

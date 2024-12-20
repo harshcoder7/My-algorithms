@@ -18,11 +18,11 @@ int partition(int A[], int l, int h)
         do
         {
             i++;
-        } while (A[i] <= pivot);
+        } while (A[i] <= pivot);  //finds the elent greeter than pivot
         do
         {
             j--;
-        } while (A[j] > pivot);
+        } while (A[j] > pivot); //finc th element smaller than pivot
         if (i < j)
             swap(&A[i], &A[j]);
     } while (i < j);

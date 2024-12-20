@@ -12,7 +12,7 @@ int trailzeroinfact(int n)
 }
 int main()
 {
-    cout<<trailzeroinfact(150)<<endl;
+    cout<<trailzeroinfact(30)<<endl;
 }
 
 

@@ -11,3 +11,15 @@ class node{
         next=nullptr;
     }
 };
+
+
+
+
+
+
+//we will make node calss
+class node{
+
+
+    
+}

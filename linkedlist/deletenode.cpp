@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "node.cpp"
+// lolaa
 
 Node *takeinput()
 {
@@ -24,30 +25,33 @@ Node *takeinput()
 	}
 	return head;
 }
-node *deleteNode(node *head, int pos) {
-  int i = 0;
-  Node *current = head;
-  if (head == nullptr) {
-    return head;
-  }
-  if (pos == 0) {
-    head = current->next;
-    delete current;
-    return head;
-  }
-  while (current->next != nullptr && i < pos - 1) {
-    current = current->next;
-    i++;
-  }
-  if (current->next != nullptr) {
-    node *temp = current->next->next;
-    delete current->next;
-    current->next = temp;
-  }
-  return head;
+node *deleteNode(node *head, int pos)
+{
+	int i = 0;
+	Node *current = head;
+	if (head == nullptr)
+	{
+		return head;
+	}
+	if (pos == 0)
+	{
+		head = current->next;
+		delete current;
+		return head;
+	}
+	while (current->next != nullptr && i < pos - 1)
+	{
+		current = current->next;
+		i++;
+	}
+	if (current->next != nullptr)
+	{
+		node *temp = current->next->next;
+		delete current->next;
+		current->next = temp;
+	}
+	return head;
 }
-
-
 
 void print(node *head)
 {

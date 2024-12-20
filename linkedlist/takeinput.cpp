@@ -2,7 +2,7 @@
 using namespace std;
 #include "node.cpp"
 
-// pehle jo sikhe n1.next=&n2,,,n2.next=&n3 this is not the idea way to fill the inputs
+// pehle jo sikhe n1.next=&n2,,,n2.next=&n3 this is not the ideal way to fill the inputs
 node *takeinput()
 {
     int data;
