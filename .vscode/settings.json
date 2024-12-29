@@ -71,5 +71,9 @@
         "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
-    "git.enabled": true
+    "git.enabled": true,
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    }
 }
