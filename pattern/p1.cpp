@@ -28,3 +28,5 @@ int main()
     cin >> n;
     print(n);
 }
+// 
+// func solve(int a, int b)
