@@ -3,37 +3,41 @@ using namespace std;
 
 vector<vector<string>> groupanagram(vector<string> &strs)
 {
-    // here i am planning to make a key and sort it and store every element of that key in my hashmap
+    // here i use a unordered  map to store the key value pair
     unordered_map<string, vector<string>> mpp;
 
-    // map banaliya now i need to find a key to store
-    //  "eat","tea","tan","ate","nat","bat"
-
-    for (string s : strs)
+    for (const string &s : strs)
     {
         string key = s;
         sort(key.begin(), key.end());
         mpp[key].push_back(s);
     }
-    vector<vector<string>> answer;
-    for (auto &lol : mpp)
+
+    // we are done with the insertion part now i need to store it in my answer string
+
+    vector<vector<string>> ans;
+    for (const auto &t : mpp)
     {
-        answer.push_back(lol.second);
+        ans.push_back(t.second);
     }
-    return answer;
+    return ans;
 }
 
 int main()
 {
-    vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-    vector<vector<string>> result = groupanagram(strs);
+    vector<string> given = {"eat", "tea", "tan", "ate", "nat", "bat"};
+    vector<vector<string>> result = groupanagram(given);
+
+    // Properly print the 2D vector
     for (const auto &group : result)
     {
-        for (const auto &str : group)
+        cout << "[ ";
+        for (const auto &word : group)
         {
-            cout << str << " ";
+            cout << word << " ";
         }
-        cout << endl;
+        cout << "]" << endl;
     }
+
     return 0;
 }
